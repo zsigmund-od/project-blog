@@ -25,7 +25,10 @@ const monoFont = Spline_Sans_Mono({
 });
 
 export const metadata = {
-  title: BLOG_TITLE
+  title: {
+    template: `%s • ${BLOG_TITLE}`,
+    default: BLOG_TITLE,
+  }
 };
 
 function RootLayout({ children }) {
